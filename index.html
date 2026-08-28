@@ -665,6 +665,56 @@
             color: var(--bg-off-white);
         }
 
+    
+        .car-splash-banner {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            height: 500px;
+            background-image: url('car_oil_splash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 80px;
+            box-sizing: border-box;
+        }
+
+        .car-splash-banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .car-banner-text {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        
+        .car-banner-text h2 {
+            font-size: 42px;
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 800;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        
+        .car-banner-text p {
+            font-size: 18px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
     </style>
 </head>
 <body>
@@ -736,6 +786,15 @@
 
 
 
+
+        
+        <!-- Car Splash Banner -->
+        <div class="car-splash-banner">
+            <div class="car-banner-text">
+                <h2>Ultimate Performance</h2>
+                <p>Experience the thrill of a perfectly lubricated engine. Maximum power, maximum protection.</p>
+            </div>
+        </div>
 
         <!-- Related Products -->
         <div class="related-section">
@@ -865,6 +924,56 @@
             cursor: pointer;
             color: var(--red);
         }
+    
+        .car-splash-banner {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            height: 500px;
+            background-image: url('car_oil_splash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 80px;
+            box-sizing: border-box;
+        }
+
+        .car-splash-banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .car-banner-text {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        
+        .car-banner-text h2 {
+            font-size: 42px;
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 800;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        
+        .car-banner-text p {
+            font-size: 18px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
     </style>
 
     <div id="font-tweaker">
