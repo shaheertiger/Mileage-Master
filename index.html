@@ -51,9 +51,6 @@
         /* --- HERO SECTION --- */
                         .hero-section {
             background-color: var(--dark-gray);
-            background-image: url('hero_bg_user.jpg');
-            background-size: cover;
-            background-position: center;
             padding: 40px 0 100px 0;
             position: relative;
             color: #F5F6F8;
@@ -756,6 +753,17 @@
             fill: var(--bg-off-white);
         }
 
+    
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0; /* Below the mask */
+        }
+
     </style>
 </head>
 <body>
@@ -764,6 +772,13 @@
         
         <!-- Hero Section -->
         <div class="hero-section">
+
+        <!-- Looping Video Background -->
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <!-- Using a high-quality Mixkit placeholder video of a car driving -->
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-driving-a-car-through-a-tunnel-at-night-26055-large.mp4" type="video/mp4">
+        </video>
+
             <div class="hero-inner">
                 <div class="hero-header">
                 <div class="logo">MILEAGE<span class="text-red">MASTER</span></div>
